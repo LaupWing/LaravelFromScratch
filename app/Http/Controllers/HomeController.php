@@ -11,8 +11,6 @@ class HomeController extends Controller
    //
    public function show()
    {
-      $posts = Post::where('idposts', 1)->firstOrFail();
-      echo $posts;
-      return view('index');
+      return view('welcome');
    }
 }
