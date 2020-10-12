@@ -36,15 +36,20 @@ https://templatemo.com/tm-553-xtra-blog
                      Blog Home
                   </a>
                </li>
-               <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
-                  <i class="fas fa-pen"></i>
+               <li class="tm-nav-item  {{Request::path()==='post' ? 'active' : ''}}">
+                  <a href="post.html" class="tm-nav-link">
+                     <i class="fas fa-pen"></i>
                      Single Post
-                  </a></li>
-               <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                  </a>
+               </li>
+               <li class="tm-nav-item  {{Request::path()==='about' ? 'active' : ''}}">
+                  <a href="about.html" class="tm-nav-link">
                      <i class="fas fa-users"></i>
                      About Xtra
-                  </a></li>
-               <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                  </a>
+               </li>
+               <li class="tm-nav-item  {{Request::path()==='contact' ? 'active' : ''}}">
+                  <a href="contact.html" class="tm-nav-link">
                   <i class="far fa-comments"></i>
                      Contact Us
                   </a>
